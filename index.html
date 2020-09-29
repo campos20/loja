@@ -24,21 +24,77 @@
       crossorigin="anonymous"
     />
 
+    <link rel="stylesheet" href="style.css" />
+
     <title>Loja</title>
   </head>
   <body>
-    <h1>Loja</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#" id="titulo">Loja</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Página Inicial <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Catálogo</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Categorias
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Feminina</a>
+              <a class="dropdown-item" href="#">Masculina</a>
+              <a class="dropdown-item" href="#">Infantil</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Esporte</a>
+            </div>
+          </li>
+        </ul>
+        <div
+          class="form-inline my-2 my-lg-0 badge badge-light badge-pill"
+          id="carrinho-de-compras"
+        >
+          <i class="fas fa-shopping-cart"></i>
+          <span class="badge bg-warning">5</span>
+        </div>
+      </div>
+    </nav>
+
     <div class="container">
-      <div class="row">
-        <div class="col-6">
+      <div class="row m-2">
+        <div class="col-md-6">
           <div class="card">
             <div class="card-header">
               <h5>Calça</h5>
             </div>
 
-            <div class="card-body">
+            <div class="card-body text-center">
               <img
-                class="card-img"
+                class="card-img imagem-mostruario"
                 src="https://st4.depositphotos.com/12985848/23032/i/1600/depositphotos_230326694-stock-photo-cropped-image-young-woman-putting.jpg"
               />
 
@@ -62,15 +118,15 @@
           </div>
         </div>
 
-        <div class="col-6">
+        <div class="col-md-6">
           <div class="card">
             <div class="card-header">
               <h5>Saia</h5>
             </div>
 
-            <div class="card-body">
+            <div class="card-body text-center">
               <img
-                class="card-img"
+                class="card-img imagem-mostruario"
                 src="https://cdn.pixabay.com/photo/2020/06/16/04/31/skirt-5304133_1280.jpg"
               />
 
@@ -95,16 +151,16 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-6">
+      <div class="row m-2">
+        <div class="col-md-6">
           <div class="card">
             <div class="card-header">
               <h5>Camiseta</h5>
             </div>
 
-            <div class="card-body">
+            <div class="card-body text-center">
               <img
-                class="card-img"
+                class="card-img imagem-mostruario"
                 src="https://cdn.pixabay.com/photo/2015/04/20/14/43/fashion-731597__340.jpg"
               />
 
@@ -128,15 +184,15 @@
           </div>
         </div>
 
-        <div class="col-6">
+        <div class="col-md-6">
           <div class="card">
             <div class="card-header">
               <h5>Camisa Feminina</h5>
             </div>
 
-            <div class="card-body">
+            <div class="card-body text-center">
               <img
-                class="card-img"
+                class="card-img imagem-mostruario"
                 src="https://st4.depositphotos.com/13349494/20886/i/1600/depositphotos_208860536-stock-photo-cropped-image-woman-holding-hanger.jpg"
               />
 
